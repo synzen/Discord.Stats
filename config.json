@@ -1,0 +1,48 @@
+{
+  "token": "",
+  "timezone": "UTC",
+  "databasePrefix": "discordstats_",
+  "mysql": {
+    "host": "localhost",
+    "user": "root",
+    "password": "password"
+  },
+  "defaults": {
+    "current": {
+      "game": {
+        "command": "gamestats"
+      },
+      "roles": {
+        "command": "rolestats"
+      }
+    },
+    "trackers": {
+      "onlineUsers": {
+        "command": "onlineusers",
+        "intervalHrs": 2,
+        "maxPlots": 120
+      },
+      "totalUsers": {
+        "command": "totalusers",
+        "intervalHrs": 24,
+        "maxPlots": 30
+      },
+      "messageMinimum": {
+        "command": "messagemin",
+        "intervalHrs": 24,
+        "minimum": 2,
+        "maxPlots": 30
+      },
+      "netChange": {
+        "command": "netchange",
+        "intervalHrs": 24,
+        "maxPlots": 30
+      },
+      "totalMessages": {
+        "command": "totalmessages",
+        "intervalHrs": 24,
+        "maxPlots": 30
+      }
+    }
+  }
+}
